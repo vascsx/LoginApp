@@ -21,6 +21,7 @@ namespace LoginApp.Date
 
             _conexaoBD.CreateTableAsync<Usuario>().Wait();
 
+
         }
 
     }
