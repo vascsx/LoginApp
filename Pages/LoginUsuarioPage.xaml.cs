@@ -7,8 +7,15 @@ public partial class LoginUsuarioPage : ContentPage
 		InitializeComponent();
 	}
 
-    private void btnRegistrar_CLicked(object sender, EventArgs e)
+    private void btnRegistrar_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new EditaUsuario());
+    }
+
+    private void btnEntrar_Clicked(object sender, EventArgs e)
     {
 
     }
+
+    
 }

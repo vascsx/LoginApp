@@ -2,11 +2,28 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginApp.Pages.EditaUsuario"
-             Title="EditaUsuario">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="EditaUsuario"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout VerticalOptions="CenterAndExpand"
+              Margin="16"
+              Padding="16">
+
+        <Label x:Name="lblEmail"
+            Text="E-mail"/>
+
+        <Entry Placeholder="Digite seu e-mail"
+            x:Name="txtEmail" />
+
+        <Label x:Name="lblSenha"
+            Text="Password"/>
+
+        <Entry Placeholder="Digite sua senha" 
+            x:Name="txtSenha" />
+
+        <Button Text="Cadastrar"
+             x:Name="btnCadastrar"
+             Clicked="btnCadastrar_Clicked"
+             Margin="7"/>
+
+    </StackLayout>
 </ContentPage>
