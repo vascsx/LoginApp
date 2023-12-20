@@ -13,7 +13,7 @@ namespace LoginApp.Date
         readonly SQLiteAsyncConnection _conexaoBD;
 
 
-        // public UsuarioData UsuarioDataTable { get; set; }[
+        public UsuarioData UsuarioDataTable { get; set; }
 
         public SQLiteData(string path)
         {
@@ -21,7 +21,7 @@ namespace LoginApp.Date
 
             _conexaoBD.CreateTableAsync<Usuario>().Wait();
 
-
+            UsuarioDataTable = new UsuarioData(_conexaoBD);
         }
 
     }

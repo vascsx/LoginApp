@@ -12,18 +12,24 @@
             Text="E-mail"/>
 
         <Entry Placeholder="Digite seu e-mail"
-            x:Name="txtEmail" />
+            x:Name="txtEmail" 
+               Text="{Binding Email}"/>
 
         <Label x:Name="lblSenha"
             Text="Password"/>
 
         <Entry Placeholder="Digite sua senha" 
-            x:Name="txtSenha" />
+            x:Name="txtSenha" 
+            Text="{Binding Senha}"/>
 
         <Button Text="Cadastrar"
              x:Name="btnCadastrar"
              Clicked="btnCadastrar_Clicked"
              Margin="7"/>
 
+        <Button Text="Voltar"
+             x:Name="btnVoltar"
+             Clicked="btnVoltar_Clicked"
+             Margin="7"/>
     </StackLayout>
 </ContentPage>
